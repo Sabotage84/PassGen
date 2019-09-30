@@ -12,7 +12,7 @@ namespace PasswordGenerator
         FileStream fileStream;
         StreamWriter writeToFile;
 
-        string defaultPath = @"C:\";
+        string defaultPath = @"E:\";
         string defaultFileName = "List";
         string defaultExtension = ".txt";
 
@@ -31,7 +31,8 @@ namespace PasswordGenerator
 
         public FileWork()
         {
-            filePath = defaultPath;
+            filePath = Environment.CurrentDirectory+"\\";
+
             fileName = defaultFileName;
             Extension = defaultExtension;
         }
